@@ -1,0 +1,65 @@
+.mdi {
+  font-size: 24px;
+}
+
+.ls-closed .bars:before {
+  font: normal normal normal 24px/1 "Material Design Icons" !important;
+  font-size: inherit !important;
+  text-rendering: auto !important;
+  line-height: inherit !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  content: "\F035C" !important;
+}
+
+
+.overlay-open.ls-closed .bars:after {
+  font: normal normal normal 24px/1 "Material Design Icons" !important;
+  font-size: inherit !important;
+  text-rendering: auto !important;
+  line-height: inherit !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  content: "\F0156" !important;  
+}
+
+.border-none {
+  border: none;
+}
+
+.border-none * {
+  border: none;
+}
+
+.pl-2 {
+  padding-left: 2em;
+}
+
+.pl-3 {
+  padding-left: 3em;
+}
+
+.pl-4 {
+  padding-left: 4em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+}
+
+.btn:not(.btn-link):not(.btn-circle) i.mdi {
+  top: 0px;
+}
+
+.btn .mdi.right {
+  margin-left: 10px;
+}
+
+.btn .mdi.left {
+  margin-right: 10px;
+}

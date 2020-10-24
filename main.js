@@ -854,7 +854,7 @@ Vue.component('party-field', {
       this.$dispatch('calculateErrors', { type: this.type })
     },
     enterHook: function(event, nextId) {
-      if (event.code !== 'Enter') return false
+      if (event.key !== 'Enter') return false
       let el = document.querySelector('#' + nextId)
       if (!el) {
         event.target.blur()
@@ -923,7 +923,7 @@ Vue.component('candidate-results', {
       })
     },
     enterHook: function(event, nextId) {
-      if (event.code !== 'Enter') return false
+      if (event.key !== 'Enter') return false
       let el = document.querySelector('#' + nextId + ' input')
       if (!el) {
         event.target.blur()

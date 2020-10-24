@@ -767,8 +767,8 @@ Vue.component('major-candidates', {
     enterHook: function(event, index) {
       let id = 'major-' + this.type + '-' + index
       let nextId = 'major-' + this.type + '-' + (index + 1)
-      if (event.code !== 'Enter') return false
-      this.addCandidate()
+      if (event.key !== 'Enter') return false
+      if (index === this.list.length - 1) this.addCandidate()
       event.target.blur()
       setTimeout(() => { $('#' + nextId).focus() }, 0)
     }
